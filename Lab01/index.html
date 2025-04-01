@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="students.html">CMS</a>
+        </div>
+        <div class="notifications">
+            <img src="bell.png" class="bell" id="notificationBell" alt="Notification Bell">
+            <div class="notification-dropdown hidden" id="notificationDropdown">
+                <p>Admin: New message</p>
+                <p>John K.: Task update</p>
+                <p>Ann S.: Submitted form</p>
+            </div>
+        </div>
+        <div class="profile">
+            <span class="user-name">James Bond</span>
+            <div class="profile-dropdown hidden" id="profileDropdown">
+                <p>Profile</p>
+                <p>Log Out</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="students.html" class="active">Students</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Students</h1>
+        <button id="addStudent">Add Student</button>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Group</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Birthday</th>
+                    <th>Status</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>KN-21</td>
+                    <td>John Smith</td>
+                    <td>M</td>
+                    <td>11.05.2004</td>
+                    <td><span class="status offline"></span></td>
+                    <td>
+                        <button class="edit"><img src="edit.png" width="20px" height="20px"></button>
+                        <button class="delete"><img src="delete.png" width="20px" height="20px"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>KN-22</td>
+                    <td>Ann Bond</td>
+                    <td>F</td>
+                    <td>24.04.2004</td>
+                    <td><span class="status online"></span></td>
+                    <td>
+                        <button class="edit"><img src="edit.png" width="20px" height="20px"></button>
+                        <button class="delete"><img src="delete.png" width="20px" height="20px"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button>&lt;</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>&gt;</button>
+        </div>
+    </main>
+</body>
+</html>
